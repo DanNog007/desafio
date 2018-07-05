@@ -1,0 +1,183 @@
+.comp-menu
+{
+	width: 30%;
+	height: 90px;
+	min-width: 300px;
+}
+
+.produto
+{
+	width: 320px;
+    height: 400px;
+    padding: 5px;
+    /* border: solid red 2px;
+    border-radius: 10px; */
+    margin-top: 15px;
+    background-color: white;
+    float: left;
+}
+
+.produto-img
+{
+	height: 240px;
+    padding: 12px 0;
+    border: solid red 1px;
+}
+
+.produto-dados
+{
+	background-color: red;
+	padding: 2px 13px;
+}
+
+.produto-dados h3
+{
+	font-family: "Arial Black", Gadget, sans-serif;
+	color: white;
+	margin: 0;
+}
+
+.produto-func
+{
+	background-color: red;
+	height: 32px;
+    padding: 9px 10px 0 10px;
+}
+
+.produto-func form #submit
+{
+	float: right;
+}
+
+.produto-func form #quant
+{
+	width: 100px;
+    text-align: center;
+}
+
+#menu-sup
+{
+	width: 100%;
+	height: 100px;
+	background-color: red;
+	min-width: 1000px;
+}
+
+#comp-esquerdo
+{
+	float: left;
+}
+
+#comp-esquerdo h1
+{
+	font-family: "Arial Black", Gadget, sans-serif;
+	color: white;
+    margin-left: 25px;
+    font-size: 36px;
+}
+
+#comp-centro
+{
+	float: left;
+	width: 40%;
+	text-align: center;
+}
+
+#comp-centro h2
+{
+	font-family: "Arial Black", Gadget, sans-serif;
+	color: white;
+}
+
+#comp-direito
+{
+	float: right;
+}
+
+#login
+{
+	width: 100px;
+	height: 40px;
+    margin-top: 36px;
+    margin-right: 15px;
+    float: right;
+}
+
+#login a
+{
+	text-decoration: none;
+	font-family: "Arial Black", Gadget, sans-serif;
+	color: white;
+	padding: 4px;
+    border: solid white 2px;
+    border-radius: 5px;
+}
+
+#cliente
+{
+	width: 150px;
+	float: right;
+    margin-right: 25px;
+}
+
+#cliente-id p
+{
+	font-family: "Arial", Gadget, sans-serif;
+	color: white;
+}
+
+#cliente-func a
+{
+	text-decoration: none;
+	font-family: "Arial Black", Gadget, sans-serif;
+	color: white;
+	font-size: 12px;
+	float: left;
+	margin-right: 10px;
+}
+
+#produtos
+{
+	min-width: 900px;
+    width: 80%;
+    margin: 0 auto;
+}
+
+#login-div
+{
+	width: 350px;
+    height: 170px;
+    margin: 14% auto 0 auto;
+    border: solid red 1px;
+}
+
+#login-head
+{
+	height: 40px;
+    background-color: red;
+    padding: 10px 0 0 0;
+    text-align: center;
+}
+
+#login-head h3
+{
+	margin: 0;
+	font-family: "Arial Black", Gadget, sans-serif;
+	color: white;
+}
+
+#login-form
+{
+	text-align: center;
+    padding: 20px;
+}
+
+#login-form form #senha
+{
+	margin-top: 5px;
+}
+
+#login-form form #submit
+{
+	margin-top: 5px;
+}
