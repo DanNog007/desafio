@@ -17,3 +17,11 @@ ou cancelar sua compra, respectivamento nos botões "Confirmar" e "Cancelar".
 5 - Clicando em Confirmar, sua compra será confirmada, e você será redirecionado para a tela onde tera acesso a todas suas compras. Agora, 
 caso clique em Cancelar, seu produto será removido do Carrinho.  
 6 - Para voltar aos produtos, basta clicar no link "Desafio.com" no canto superior esquerdo.  
+
+## Ferramentas Utilizadas
+* Eclipse Photon PHP - Para o desenvolvimento de telas, classes, etc.
+* DBDesigner 4 - Para criação do modelo lógico e físico do banco de dados.
+* XAMPP - Uso do Apache para rodar a aplicação, e do MySql como banco de dados.
+
+## Informaçoes complementares
+O projeto foi desenvolvido seguindo o padrão MVC, para obter um certo aumento de produtividade, organização dos codigos, redução da complexidade, reutilização dos codigos, e utilização de boas praticas.
