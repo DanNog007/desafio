@@ -1,6 +1,7 @@
+<!-- PREPARAS OS DADOS PARA SEMREM APRESENTADOS AO USUARIO-->
 <div id="menu-sup">
 	<div class="comp-menu" id="comp-esquerdo">
-		<h1>Desafio.com</h1>
+		<a href="index.php"><h1>Desafio.com</h1></a>
 	</div>
 	<div class="comp-menu" id="comp-centro">
 		<h2><?php if(isset($_GET["tela"])){
@@ -23,11 +24,12 @@
 			{
 				echo "<div id='cliente'>";
 				echo "<div id='cliente-id'>";
-				echo "<p>Nome Cliente</p>";
+				echo "<p>".$_SESSION['usuario']."</p>";
 				echo "</div>";
 				echo "<div id='cliente-func'>";
-				echo "<a href='#'>Minha Conta</a>";
-				echo "<a href='#'>Sair</a>";
+				echo "<a href='minhasCompras.php'>Compras</a>";
+				echo "<a href='carrinhoCompras.php'>Carrinho</a>";
+				echo "<a href='src/util/validacaoUsuario.php'>Sair</a>";
 				echo "</div>";
 				echo "</div>";
 			}

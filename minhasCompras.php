@@ -1,10 +1,18 @@
+<?php 
+session_start();
+//RESTRINGE ACESSO A TELA, NECESSARIO ESTAR LOGADO
+if (!(isset ($_SESSION['login']) == true) && !(isset ($_SESSION['senha']) == true))
+{
+    header("location:login.php");
+}
+?>
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Frameset//EN">
 <html>
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 	<link rel="stylesheet" type="text/css" href="css/css.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-	<title>Produtos</title>	
+	<title>Minhas Compras</title>	
 </head>
 	<body>
 		<div id="menu-view">
@@ -35,7 +43,7 @@
 		<script>
 			$(document).ready(function(){
 				$("#menu-view").load("src/view/menu.php?tela="+document.getElementsByTagName("title")[0].innerHTML.replace(" ","%20"));
-				$("#produtos").load("src/view/produtos.php");
+				$("#produtos").load("src/view/compras.php");
 			});
 		</script>
 	</body>

@@ -12,15 +12,17 @@ class Compra
     private $cliente;
     private $quantidade;
     private $estado;
+    private $dtCompra;
     
     //CONSTRUTOR
-    public function __construct($idCompra, $produto, $cliente, $quantidade, $estado) {
+    public function __construct($idCompra, $produto, $cliente, $quantidade, $estado, $dtCompra) {
         
         $this -> idCompra = $idCompra;
         $this -> produto = $produto;
         $this -> cliente = $cliente;
         $this -> quantidade = $quantidade;
         $this -> estado = $estado;
+        $this -> dtCompra = $dtCompra;
     }
     
     //METODOS GETTERS E SETTERS
@@ -72,6 +74,16 @@ class Compra
     public function setEstado($estado)
     {
         $this->estado = $estado;
+    }
+    
+    public function getDtCompra()
+    {
+        return $this->dtCompra;
+    }
+
+    public function setDtCompra($dtCompra)
+    {
+        $this->dtCompra = $dtCompra;
     }
 }
 

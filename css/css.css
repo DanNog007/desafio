@@ -1,3 +1,4 @@
+/*Classes*/
 .comp-menu
 {
 	width: 30%;
@@ -55,6 +56,13 @@
     text-align: center;
 }
 
+.form-right
+{
+	float: right;
+	margin-left: 5px;
+}
+
+/*Id's*/
 #menu-sup
 {
 	width: 100%;
@@ -68,7 +76,12 @@
 	float: left;
 }
 
-#comp-esquerdo h1
+#comp-esquerdo a
+{
+	text-decoration: none;
+}
+
+#comp-esquerdo a h1
 {
 	font-family: "Arial Black", Gadget, sans-serif;
 	color: white;
@@ -138,7 +151,7 @@
 
 #produtos
 {
-	min-width: 900px;
+	min-width: 990px;
     width: 80%;
     margin: 0 auto;
 }
@@ -180,4 +193,35 @@
 #login-form form #submit
 {
 	margin-top: 5px;
+}
+
+#dados-cliente
+{
+	width: 600px;
+    margin: 20px auto;
+    border: solid red 1px;
+}
+
+#dados-head
+{
+	background-color: red;
+	padding: 2px 13px;
+}
+
+#dados-head h3
+{
+	font-family: "Arial Black", Gadget, sans-serif;
+	color: white;
+	margin: 0;
+}
+
+#dados-body
+{
+	padding: 0px 14px;
+}
+
+#dados-body p
+{
+	font-family: "Arial", Gadget, sans-serif;
+	color: black;
 }

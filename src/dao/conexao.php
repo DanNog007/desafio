@@ -1,7 +1,7 @@
  <?php
  
  class Conexao { 
-	//DADOS PARA CONEXÃO COM O BANCO
+	//DADOS PARA CONEXï¿½O COM O BANCO
     private $servername = "localhost";
     private $username = "root";
     private $password = "0411";
@@ -11,19 +11,21 @@
     private $conn;
     
     public function CriarConexao(){
-        //ABRE A CONEXÃO COM O BANCO
+        //ABRE A CONEXÃƒO COM O BANCO
         $this -> conn = mysqli_connect($this -> servername, $this -> username, $this -> password, $this -> dbname);
         
-        //VERIFICA SE A CONEXÃO FOI BEM SUCEDIDA
+        //VERIFICA SE A CONEXÃƒO FOI BEM SUCEDIDA
         if (!$this -> conn) {
-            die("Falha na conexão com o banco: " . mysqli_connect_error());
+            die("Falha na conexÃ£o com o banco: " . mysqli_connect_error());
         }
     }
     
     public function FecharConexao(){
-        //FECHA A CONEXÃO COM O BANCO
+        //FECHA A CONEXÃƒO COM O BANCO
         mysqli_close($this->conn);
     }
+    
+    //GETTERS E SETTERS
     public function getConn()
     {
         return $this->conn;

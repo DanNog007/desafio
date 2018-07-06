@@ -1,7 +1,7 @@
 CREATE TABLE Entrada (
   idEntrada INTEGER NOT NULL AUTO_INCREMENT,
   dtEntrada DATE NOT NULL,
-  nunNF VARCHAR(10) NOT NULL,
+  numNF VARCHAR(10) NOT NULL,
   PRIMARY KEY(idEntrada)
 );
 
@@ -49,6 +49,7 @@ CREATE TABLE Compra (
   idProduto INTEGER NOT NULL,
   quantidade INTEGER NOT NULL,
   estado CHAR(1) NOT NULL,
+  dtCompra DATE NOT NULL,
   PRIMARY KEY(idCompra, idCliente, idProduto),
   INDEX Vendas_FKIndex1(idCliente),
   INDEX Vendas_FKIndex2(idProduto),
