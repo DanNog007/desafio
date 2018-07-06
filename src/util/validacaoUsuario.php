@@ -10,7 +10,7 @@ $senha = "";
 
 //VERIFICA SE EXISTE VALORES NO POST, E OS ATRIBUEM AS VARIAVEIS
 if(isset($_POST['login-input']) && isset($_POST['senha'])){
-    $login = $_POST['login-input'];
+    $login = str_replace("'", "", $_POST['login-input']);//SUBSTITUI ASPAS SIMPLES PARA EVITAR SQL INJECTION
     $senha = md5($_POST['senha']);
 }
 
